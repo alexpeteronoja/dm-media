@@ -135,11 +135,12 @@ function Home() {
           smartphones
         </p>
 
-        <div className="flex flex-col md:flex-row md:justify-center md:items-center gap-10 mt-10">
+        <div className="flex flex-col md:flex-row md:justify-center md:items-center gap-x-10 gap-y-7 mt-10">
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://wa.me/2349063201115?text=Hi%20I%20want%20to%20enrol%20in%20the%20Smartphone%20Profitability%20Academy"
+            className="mx-auto md:mx-0"
           >
             <button className="flex gap-x-2 justify-center items-center bg-[#009379] text-white  px-8 py-4 rounded-[20px] font-semibold cursor-pointer">
               <MdOutlineRocketLaunch /> Enroll Now
@@ -150,6 +151,7 @@ function Home() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://wa.me/2349063201115?text=Hi%20I%20want%20to%20enrol%20in%20the%20Smartphone%20Profitability%20Academy"
+            className="mx-auto md:mx-0"
           >
             <button className="flex gap-x-2 justify-center items-center bg-[#009379] text-white px-8 py-4 rounded-[20px] font-semibold cursor-pointer">
               <MdOutlineRocketLaunch /> Contact us
