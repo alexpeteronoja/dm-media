@@ -7,11 +7,15 @@ function HeroSection() {
     <>
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-5 bg-[#E5F4F2] px-10 pt-10 sm:pt-10 pb-10 md:pb-0 text-center">
         <div className="border-b md:border-b-0 border-b-[#009379] self-end">
-          <img src={boyPhone} alt="" className="w-62.5 md:md:w-100 mx-auto" />
+          <img
+            src={boyPhone}
+            alt=""
+            className="w-full max-w-62.5 md:md:max-w-100 mx-auto"
+          />
         </div>
 
         <div className="max-w-7xl mx-auto self-center">
-          <h2 className="text-3xl md:text-4xl lg:text-6xl">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl">
             Empower Your Future with Tech Skills That Matter
           </h2>
           <p className="text-xl mt-5">
