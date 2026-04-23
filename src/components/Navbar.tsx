@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { CgSmartphone } from 'react-icons/cg';
 import { FaXmark } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
@@ -6,12 +7,15 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <nav className="bg-[#F8D57E]  border-b shadow ">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <nav className="bg-[#FFFFFF]  shadow sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 ">
           <div className="flex justify-between items-center ">
             {/* Logo */}
-            <div className="text-xl font-bold">
-              <Link to="/">DM Media</Link>
+            <div className="flex items-center gap-2">
+              <CgSmartphone className="w-8 h-8 text-primary font-bold" />
+              <span className="text-xl font-bold">
+                <Link to="/">DM Media</Link>
+              </span>
             </div>
 
             {/* Hamburger Button (Mobile) */}
@@ -24,7 +28,7 @@ function Navbar() {
                 <svg
                   className="w-6 h-6"
                   fill="none"
-                  stroke="currentColor"
+                  stroke="black"
                   strokeWidth="2"
                   viewBox="0 0 24 24"
                   strokeLinecap="round"
@@ -36,7 +40,7 @@ function Navbar() {
             </div>
 
             {/* Navigation Links (Desktop) */}
-            <div className="hidden md:flex space-x-6">
+            <div className="hidden md:flex items-center space-x-6">
               <Link to="/" className=" hover:text-blue-500">
                 Home
               </Link>
@@ -48,12 +52,16 @@ function Navbar() {
                 state={{ scrollTo: 'project-section' }}
                 className="hover:text-blue-500"
               >
-                Project
+                Courses
               </Link>
 
               <Link to="/contact" className="hover:text-blue-500">
-                Contact
+                Features
               </Link>
+
+              <button className="px-6 py-2 bg-black text-white cursor-pointer rounded-lg border hover:opacity-90 transition-opacity">
+                Enroll Now
+              </button>
             </div>
           </div>
         </div>
