@@ -17,7 +17,7 @@ export function About() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-linear-to-br bg-[#F8D57E] text-primary-foreground py-20">
+      <section className="bg-[#E5F4F2] text-primary-foreground py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-5xl mb-6">About SPA</h1>
@@ -30,7 +30,7 @@ export function About() {
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 bg-[#E5F4F2]">
+      <section className="py-20 bg-[#F8D57E]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -87,7 +87,7 @@ export function About() {
       </section>
 
       {/* Why Choose SPA */}
-      <section className="py-20 bg-[#F8D57E]">
+      <section className="py-20 bg-[#E5F4F2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl mb-4">Why Choose SPA?</h2>
@@ -170,7 +170,7 @@ export function About() {
       </section>
 
       {/* Our Story */}
-      <section className="py-20 bg-[#E5F4F2]">
+      <section className="py-20 bg-[#F8D57E]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl mb-4">Our Story</h2>
@@ -206,16 +206,22 @@ export function About() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[#F8D57E] text-primary-foreground">
+      <section className="py-20 bg-[#E5F4F2] text-primary-foreground">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl mb-6">Join Our Community</h2>
           <p className="text-xl mb-8 text-primary-foreground/90">
             Start your journey with thousands of students worldwide
           </p>
 
-          <button className="flex gap-x-2 justify-center items-center bg-[#009379] text-white mx-auto  px-8 py-4 rounded-[20px] font-semibold cursor-pointer">
-            <MdOutlineRocketLaunch /> Get Started Today
-          </button>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://wa.me/2349063201115?text=Hi%20I%20want%20to%20enrol%20in%20the%20Smartphone%20Profitability%20Academy"
+          >
+            <button className="flex gap-x-2 justify-center items-center bg-[#009379] text-white mx-auto  px-8 py-4 rounded-[20px] font-semibold cursor-pointer">
+              <MdOutlineRocketLaunch /> Get Started Today
+            </button>
+          </a>
         </div>
       </section>
 

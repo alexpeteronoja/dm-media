@@ -48,19 +48,25 @@ function Navbar() {
                 About
               </Link>
               <Link
-                to="/"
-                state={{ scrollTo: 'project-section' }}
+                to="/courses"
+                // state={{ scrollTo: 'project-section' }}
                 className="hover:text-blue-500"
               >
                 Courses
               </Link>
 
-              <Link to="/contact" className="hover:text-blue-500">
+              <Link to="/features" className="hover:text-blue-500">
                 Features
               </Link>
 
               <button className="px-6 py-2 bg-black text-white cursor-pointer rounded-lg border hover:opacity-90 transition-opacity">
-                Enroll Now
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://wa.me/2349063201115?text=Hi%20I%20want%20to%20enrol%20in%20the%20Smartphone%20Profitability%20Academy"
+                >
+                  Enroll Now
+                </a>
               </button>
             </div>
           </div>
@@ -74,7 +80,7 @@ function Navbar() {
         )}
 
         <div
-          className={`md:hidden fixed z-30 top-0 right-0 h-full bg-[#F8D57E] w-64  px-4 pb-4 space-y-2 transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
+          className={`md:hidden fixed z-30 top-0 left-0 h-full bg-[#F8D57E] w-64  px-4 pb-4 space-y-2 transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
         >
           <div className="flex justify-end px-5 pt-6 pb-1">
             <button
@@ -92,14 +98,14 @@ function Navbar() {
             About
           </Link>
           <Link
-            to="/"
+            to="/courses"
             state={{ scrollTo: 'project-section' }}
             className="block  hover:text-blue-500"
           >
-            Project
+            Courses
           </Link>
-          <Link to="/contact" className="block  hover:text-blue-500">
-            Contact
+          <Link to="/features" className="block  hover:text-blue-500">
+            Features
           </Link>
         </div>
       </nav>
